@@ -79,19 +79,76 @@ header, footer {
 
 /* Imported Typfaces */
 
-
+@font-face {
+    font-family: "Josefin Slab";
+    src: url(../fonts/josefinslab-regular.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/montserrat-regular.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+  }
+    
 
 
 
 /* Typography Styles */
 
-
-
+html{font-family: "Montserrat", Arial, sans-serif}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: "Josefin Slab";
+}
+h1{
+    text-align:center;
+    letter-spacing:.125rem;
+    font-family: "Josefin Slab", serif;
+    font-size:3.75rem;
+    margin:1.125rem;
+}
+h2{font-size:1.5rem;}
+p, li {
+    font-size: 0.75rem; 
+    letter-spacing: 0.03125rem; 
+    word-spacing: 0.125rem; 
+  }
+  h2 + p {
+    text-indent: 1.5rem;
+  }
+  figcaption {
+    font-size: 0.75rem;
+    margin-bottom: 2rem; 
+  }
 
 
 
 /* Link Styling */
 
+
+a:link,
+a:visited{font-family: "Montserrat";
+    color: #33658A;}
+
+  
+  a:focus, a:hover {
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+a,p,li,figcaption{font-family: "Montserrat"}
+
+
+
+a:focus,
+a:hover{font-family: "Montserrat"}
 
 
 
@@ -100,6 +157,29 @@ header, footer {
 /* List Styling */
 
 
+  /* Add margin and change bullet type for ordered and unordered lists */
+  ul, ol {
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1.5rem;
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  
+  ol{
+    list-style-type:lower-alpha;
+  }
+  
+  /* Transform text to uppercase for links associated with the long-list class on hover */
+  .long-list a:hover {
+    text-transform: uppercase;
+  }
+
 
 
 
@@ -107,6 +187,31 @@ header, footer {
 /* Navigation Menu */
 
 
+nav {
+    padding-left: 0;
+    margin-top: .25rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    font-size: 1.125rem;
+    margin-bottom:1.5rem;
+    border: 0.0625rem solid #33658A;
+  }
+  
+nav a:hover, nav a:focus {
+    color: #FFF;
+    background-color: #33658A;
+  }
+  
+  nav a:active {
+    color: #FFF;
+    background-color: #000;
+  }
 
 
 
@@ -114,7 +219,6 @@ header, footer {
 /* Footer Styles */
 
 
-
-
+footer{text-align:center}
 
 
