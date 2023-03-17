@@ -1,0 +1,117 @@
+/* Imported Typeface Files */
+
+@font-face {
+    font-family:Lato;
+    src: url(../fonts/lato-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+
+    font-family:Alfa Slab One;
+    src: url(../fonts/alfa-slab-one-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+
+
+/* Root */
+
+html {
+    font-size:16px;
+}
+
+
+/* Body & Main  */
+
+body {
+    font-family:Lato, Arial, sans-serif;
+
+}
+
+
+  .top-row,.bottom-row{
+    padding-top:40px;
+    margin-top:40px;
+    padding-bottom:40px;
+    background-color:#f1f1f1
+}
+ .internal-container{
+     padding: 20px;
+     background-color: #e5e5e5;
+     display: table;
+     margin-top: 20px;
+}
+ h1{
+    font-weight:bold;
+    font-size:3rem;
+}
+ h2{
+    font-weight:700;
+    text-decoration: underline;
+    font-size:1.5rem;
+}
+h3{
+    font-weight:700;
+    text-decoration: underline;
+    font-size:1.2rem;
+    color:white;
+    background-color:red;
+    padding:5px 10px;
+    display:inline-block;
+}
+ .top-row .movie-summary{
+    max-width:400px;
+}
+.review q{font-style:italic;}
+.review{margin-bottom:20px;}
+.review .name{font-size:.7rem}
+figcaption{color:#999999;font-style:italic;font-size:.7rem}
+ .row-images-scenes{
+    padding-bottom:30px;
+    padding-top:0px;
+}
+
+
+.row-images-cast img{height:200px;width:auto;}
+ .row-images-scenes img{
+    padding-bottom:30px;
+}
+ .row-images-title{
+    padding-bottom:0px;
+    padding-top:30px;
+}
+ .container-trailers-title{
+    margin-top:40px;
+}
+ .small-button{
+    background-color:red;
+    color:white !important;
+    padding:5px 10px;
+     border-radius:100px;
+    margin-right:10px;
+    font-size:.8rem;
+}
+ .movie-rating .text{
+    padding-left:5px;
+    top:2px;
+    position:relative;
+}
+ footer{
+    background-color:#333;
+    padding:20px;
+    text-align:center;
+
+}
+ footer p,footer a{
+    color:white;
+
+}
+footer p{text-align:center;width:100%}
+/* Image & Figure */
+
+
+
+/* Footer */
+
+
