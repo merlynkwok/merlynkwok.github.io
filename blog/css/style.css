@@ -1,0 +1,302 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+
+/* Imported Typeface Files */
+
+
+/* I know we don't need all these fonts, but I wasn't sure which to use */
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/sans-serif/lato-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/sans-serif/montserrat-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/sans-serif/opensans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/sans-serif/roboto-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('../fonts/serif/josefinslab-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/serif/robotoslab-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rozha One';
+    src: url('../fonts/serif/rozhaone-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ultra';
+    src: url('../fonts/serif/ultra-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+    text-align: center;
+    font-family: "Lato";
+    transform: rotate(-5deg);
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #000;
+}
+h1 span{
+    font-family: 'Ultra', Garamond, serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: white;
+    background-color:#80354C;
+    padding: 10px;
+    border-radius: 10px 0px 10px 0px;
+    box-shadow: 0px 2px 8px #000;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-shadow: 1px 1px 2px #000;
+}
+p{
+   font-family:'Roboto';
+   font-size:.8rem
+}
+h2{
+    font-family:'Roboto';
+    margin:0px;
+   padding:0px;
+   padding-left:50px;
+   padding-top:50px;
+   font-size:1rem ;
+   padding-bottom:10px;
+}
+h3{
+   font-size:.8rem;
+    font-family:'Roboto';
+}
+time{
+   font-size:.7rem;
+   font-style:italic;
+   color:#777;
+   padding-bottom:30px;
+   display:block;
+}
+figure img{
+   width:100%;
+   height:auto;
+}
+header{
+   padding:25px 30px;
+}
+body{
+   border:1px solid #000;
+   max-width:900px;
+   margin:auto;
+   margin-bottom:20px;
+   margin-top:20px;
+}
+nav{
+   text-align:left;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+nav ul{
+   list-style-type:none;
+   margin:0px;
+   padding:0px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+   padding: 15px 30px;
+    font-size: 20px;
+    display:inline-block;
+    text-decoration: none;
+    color: #2B475F;
+}
+nav a.active,nav a:hover{
+    transform: rotate(5deg);
+    text-decoration: line-through;
+}
+p{
+   font-size:10px;
+}
+.main-section{
+   padding:50px;
+   display:flex;
+   padding-top:0px;
+}
+article p:first-of-type{
+   padding-top:0px;
+   margin-top:0px
+}
+article{
+   width:75%;
+   padding-right:30px;
+}
+aside{
+   width:25%;
+   border-left:1px solid #000;
+   padding-left:30px
+}
+aside p{
+   margin:0px;
+   padding:0px;
+   padding-bottom:8px;
+}
+.article-image figcaption{
+   display:none;
+}
+aside h3{
+   padding-top:0px;
+   margin-top:0px;
+}
+aside figure{
+   width:100%;
+   margin:0px;
+   margin-bottom:3px
+}
+aside p{
+   font-size:.5rem;
+}
+aside figure figcaption{
+   display:none;
+}
+.article-image{
+    width: 200px;
+    float: left;
+    position: relative;
+    margin: 0px;
+    margin-right: 10px;
+}
+.article-image img{
+    width: 100%;
+    height: auto;
+}
+.subsection{
+   display:flex
+}
+.subsection figure{
+   width:32%;
+   ;
+   margin:0px;
+   padding-bottom:0px;
+   padding-right:5px;
+}
+.subsection figure figcaption{
+   background-color:#EDEEDE;
+   padding:6px 8px;
+   font-size:.5rem;
+   color:#555;
+}
+.subsection figure img{
+    vertical-align: text-top;
+   /* table to remove margin between image and figcaption */
+}
+button{
+   font-family:'Ultra', Garamond, serif;
+    letter-spacing:.5px;
+    font-weight:bold;
+   padding:7px 10px;
+   background-color:#26476F;
+   border:none;
+   outline:none;
+   color:white;
+   border-radius:5px;
+   margin-top:20px;
+}
+.expand{
+    border-bottom:1px solid #000;
+    padding-bottom:30px;
+    margin-bottom:20px;
+    zoom:.5;
+   text-decoration:none;
+   font-size:1px;
+   letter-spacing:.5px;
+   display:block
+}
+footer{
+   display:flex;
+   padding-left:50px;
+   padding-right:50px;
+   padding-bottom:20px;
+}
+footer p.left{
+   text-align:left;
+}
+footer p.right{
+   text-align:right;
+}
+footer p{
+   width:50%;
+}
+footer a{
+   color:#777;
+   font-family:'Alfa Slab One';
+   text-decoration:none;
+}
